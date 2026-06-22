@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Nimmiya ❤️</title>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(-45deg,#ff4d6d,#ff758f,#ff8fa3,#ffc2d1);
+
+    background-size:400% 400%;
+
+    animation:bg 10s ease infinite;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+
+
+@keyframes bg{
+
+    0%{background-position:0% 50%;}
+
+    50%{background-position:100% 50%;}
+
+    100%{background-position:0% 50%;}
+
+}
+
+
+
+.container{
+
+    z-index:10;
+
+    color:white;
+
+}
+
+
+
+h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:5rem;
+
+    text-shadow:0 0 20px rgba(255,255,255,.7);
+
+}
+
+
+
+.typewriter{
+
+    font-size:1.5rem;
+
+    margin-top:20px;
+
+    border-right:3px solid white;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    width:0;
+
+    animation:typing 5s steps(50,end) forwards,
+
+              blink .8s infinite;
+
+}
+
+
+
+@keyframes typing{
+
+    from{width:0}
+
+    to{width:100%}
+
+}
+
+
+
+@keyframes blink{
+
+    50%{border-color:transparent}
+
+}
+
+
+
+.btn{
+
+    margin-top:40px;
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#ff4d6d;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+.heart{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:20px;
+
+    animation:float 8s linear infinite;
+
+}
+
+
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(100vh);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-100px);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+#message{
+
+    display:none;
+
+    margin-top:30px;
+
+    font-size:2rem;
+
+    animation:fadeIn 1s;
+
+}
+
+
+
+@keyframes fadeIn{
+
+    from{opacity:0}
+
+    to{opacity:1}
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+
+
+<h1>Nimmiya ❤️</h1>
+
+
+
+<div class="typewriter">
+
+You are the most beautiful chapter of my life...
+
+</div>
+
+
+
+<button class="btn" onclick="showLove()">
+
+💖 Open My Heart 💖
+
+</button>
+
+
+
+<div id="message">
+
+🌹 Nimmiya,  Aapne kalh offer kara tha to aah main aah wise kr data hu ik I'm not good at all but but I love youhhh NImiyaaaaa Bacchae .<br><br>
+
+❤️ I don't need a perfect love story,<br>
+
+because being with you is already perfect.<br><br>
+
+💍 Will you be the special person in my life? ❤️
+
+</div>
+
+
+
+</div>
+
+
+
+<script>
+
+
+
+function showLove(){
+
+    document.getElementById("message").style.display="block";
+
+}
+
+
+
+for(let i=0;i<50;i++){
+
+
+
+    let heart=document.createElement("div");
+
+
+
+    heart.innerHTML="❤️";
+
+
+
+    heart.className="heart";
+
+
+
+    heart.style.left=Math.random()*100+"vw";
+
+
+
+    heart.style.animationDuration=
+
+        (Math.random()*5+5)+"s";
+
+
+
+    heart.style.fontSize=
+
+        (Math.random()*25+15)+"px";
+
+
+
+    document.body.appendChild(heart);
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>     
